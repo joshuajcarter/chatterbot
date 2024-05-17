@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #2d0174;
+}
+
+#welcome-outer {
+    display: flex;
+    justify-content: center;
+}   
+
+#welcome-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    max-width: 960px; 
+    height: 90vh;
+    padding-bottom: 2rem;
+}
+
+#icon-container {    
+    background-color: #fffb00;
+    width: 40%;
+    max-width: 240px;
+    border-radius: 16px;  
+}
+
+#chatbot-icon {    
+    max-width: 100%;
+    padding: 8px;  
+}
+
+#welcome-text h1, 
+#welcome-text h2 {   
+    color: #fffb00;   
+    font-size: 2.5rem; 
+    text-align: center;  
+}
+
+#welcome-text h1 {
+    margin-bottom: 1rem;
+}
+
+#chatterbot {
+    color: fuchsia;
+}
+
+#startButton {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #2d0174;
+    background-color: rgb(128, 255, 0);
+    padding: .5rem 1rem;
+    border-radius: 16px ;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: grab;
+}
+
+#scroller-icon-container {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+}
+
+#scroller-chatbot-icon {
+    background-color: #fffb00;
+    height: 10vh;
+    width: auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+#scroller-outer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scroller {
+    width: 100%;
+    max-width: 620px;
+    height: 60vh;   
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1rem;;
+}
+
+::-webkit-scrollbar {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #140441;
+    width: 2px;
+    border-radius: 8px;
+}
+
+#introMessage {
+    display: none;
+}
+
+#botmsg {
+    background-color: aqua;
+}
+
+.timeNow {
+    font-size: 0.75rem;
+    padding: 1.5rem 1.25rem 0.25rem;
+}
+
+#userTime {
+    float:right;
+    clear:both;
+}
+
+#botTime {
+    float:left;
+    clear: both;
+}
+
+#introMessage,
+.userBubble,
+.botBubble {
+    max-width: 75%;
+    padding: .5rem;
+    margin: 0 1rem;
+}
+
+.userBubble,
+.botBubble {
+    color: #2d0174;
+}
+
+#introMessage,
+.botBubble {
+    background-color: aqua;
+    border-radius: 8px 8px 8px 0px;
+    clear: both;
+}
+
+.userBubble {
+    background-color: rgb(255, 251, 0);
+    border-radius: 8px 8px 0px 8px; 
+    float: right;
+    clear: both; 
+}
+
+#userInputField-outer {
+    display: none;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+#userInputField {
+    display: none;    
+    width: 75%; 
+    max-width: 620px; 
+}
+
+#userInputForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userInput {
+    background-color: rgb(255, 251, 0);
+    width: 80%;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+}
+
+#submitButton {
+    background: none;
+}
+
+.fa-share {
+    color: #80ff50; 
+    font-size: 2rem;
+    padding: .5rem;
+    box-sizing: content-box;
+    border: 2px solid #80ff50;
+    border-radius: 8px;    
+}
+
+.footer-content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 1rem 0;
+    color: #fffb00;
+    background-color: #140441;    
+    text-align: center;
+}
+
+.footer-content a {
+    color: fuchsia;
+}
+/*-----Design and code by Joshua J.Carter 15 May 2023-----*/

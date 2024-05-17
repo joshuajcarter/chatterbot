@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Chatterbot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<!--<a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Hilmy Abiyyu A. - Flaticon</a>-->
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+</header>
+<main id="main">
+	<div id="welcome-outer">
+		<div id ="welcome-inner">
+			<div id="icon-container">
+				<img src="assets/images/robotic.png" id="chatbot-icon" alt="Chatbot icon created by surang - Flaticon">
+			</div>
+			<div id="welcome-text">
+				<h1> Hi! I'm <span id="chatterbot">Chatterbot</span></h1> 
+				<h2>Let's chat!</h2>
+			</div>
+			<div id="button-container">
+				<button id="startButton">START</button>
+			</div>
+		</div>
+	</div>
+	<!--scroller-->
+	<div id="scroller-outer">
+		<div id="scroller-icon-container">
+			<img src="assets/images/robotic.png" id="scroller-chatbot-icon" alt="Chatbot icon created by surang - Flaticon">
+		</div>
+		<div id="scroller">
+		<!-- new content dynamically inserted here -->				
+			<ul id="chatLogScroller">
+				<ul id="introMessage">
+					<li id = 'botmsg'><p>Hi im Chatterbot. What's your name? Where are you from?</p></li>
+				</ul>
+			</ul>
+			<div id="anchor"></div>
+		</div>
+	</div>
+	<div id="userInputField-outer">
+		<ul id="userInputField">
+			<li>
+				<form id="userInputForm">
+					<input type='text' id='userInput'  name='message' placeholder="say something" autocomplete="off"></input>
+					<button type="submit" id="submitButton" value="">
+						<a href="#anchor">
+							<i class="fas fa-share"></i>
+						</a>
+					<button>							
+				</form>
+			</li>
+		</ul>
+	</div>
+<footer>
+	<section class="footer-content">
+		<p>Design &#38; code by <a href="https://joshuajcarter.com/" target="_blank">Joshua J. Carter</a></p>
+		<p>&copy; 2023.  All rights reserved</p>
+	</section>
+</footer>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript" src='assets/main.js' ></script>
+
+</body>
+</html>
+
+<!--Design and code by Joshua J.Carter 15 May 2023-->
